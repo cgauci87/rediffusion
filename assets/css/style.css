@@ -1,3 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gotham Medium", Metropolis, sans-serif;
+}
+
 body {
-    background: yellowgreen;
+    background-color: gray;
+}
+
+/* --------- Heading */
+.heading-container {
+ min-height: 100vh;
+}
+
+#logo {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 30vh;
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, .3);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(239, 215, 215, 0.7);
+    opacity: .7;
+}
+
+#logo:after {
+    content: '';
+    padding-top: 100%;
+    display: block;
+}
+
+#logo:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    border: 2px solid #EEE;
+    border-radius: 50%;
+}
+
+
+h1 {
+    color: white;
+ 	font-size: calc( 64px + (24 - 12) * (100vw - 400px) / (800 - 400));
+    letter-spacing: calc( 16px + (8 - 4) * (100vw - 400px) / (800 - 400));
+    max-width: 100%;
+    white-space: pre-line;
+    text-align: center;
+    background-color: rgba(76,86,98,.5);
+    text-transform: uppercase;
+}
+
+#bg-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+.player-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.audioPlayer {
+    background-color: transparent;
+    padding: 100px 50px;
+    width: 414px;
+    max-width: 100%;
+    border-radius: 16px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .5);
+}
+
+.mp3-img {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-height: 50vh;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, .3);
+    margin-bottom: 50px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mp3-img:after {
+    content: '';
+    padding-top: 100%;
+    display: block;
+}
+
+.mp3-img:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, .3);
+    border-radius: 50%;
+}
+
+.mp3Description {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#trackName h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #313131;
+    margin-bottom: 5px;
+}
+
+.trackAuthor h2 {
+    font-weight: 300;
+    color: #313141;
+}
+
+.audioPlayerControls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.audioPlayerControls .play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #FE4880;
+    color: #FFF;
+    margin: 0 30px;
+    border: none;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 6px 12px rgba(254, 72, 128, 0.6);
+    transition: 0.4s;
+}
+
+.audioPlayerControls .skip-btn {
+    background: none;
+    border: none;
+    appearance: none;
+    cursor: pointer;
+    outline: none;
+    color: #CCC;
+}
+
+.audioPlayerControls .play:hover {
+    box-shadow: 0px 8px 16px rgba(254, 72, 128, 0.8);
+}
+
+
+@media (max-width: 414px) {
+    .audioPlayer {
+        min-height: 100vh;
+        border-radius: 0px;
+        padding: 75px 30px;
+    }
 }

@@ -4,10 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesome and google fonts  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
+
     <link rel="stylesheet" href="/assets/css/style.css">
-    <title>Rediffusion</title>
-</head>
-<body>
+    <title>Rediffusion App</title>
+</head> 
+<body>  
+    <div class="heading-container">
+        <video id="bg-video" autoplay loop muted poster="./assets/images/vinyl-img.png">
+            <source src="./assets/videos/vinyl-video.webp" type="video/mp4">
+          </video>
+    <img id="logo" src="./assets/images/logo.png" alt="logo">
+    <h1>Set<br>the<br>tone . </h1>
+   </div>
+    <div class="player-container">
+        <div class="audioPlayer">
+            <div class="mp3Description mp3-img">
+                <h2 id="trackName">Beyond the Horizon</h2>
+                <h2 id="trackAuthor">Borrtex</h2>
+            </div>
+            <div class="audioPlayerControls">   
+                <button class="skip-btn goBackwards-btn"><i class="fas fa-backward fa-lg"></i></button>
+                <button class="play-btn"><i class="fas fa-play fa-4x"></i></button>
+                <button class="skip-btn goForward-btn"><i class="fas fa-forward fa-lg"></i></button>
+            </div>
+        </div>
+    </div>
 
     <script src="/assets/js/script.js"></script> 
 </body>
