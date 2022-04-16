@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
 
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/music-player-app/public/assets/css/style.css">
     <link rel="icon" type="image/x-icon" href="/assets/images/icon.PNG">
     <title>Rediffusion App</title>
 </head> 
 <body>  
+    <noscript>You need to enable JavaScript to run this app.</noscript>
     <div class="heading-container">
         <video id="bg-video" autoplay loop muted poster="./assets/images/vinyl-img.png">
             <source src="./assets/videos/vinyl-video.webp" type="video/mp4">
@@ -24,10 +25,10 @@
     <div class="player-container">
         <div class="audioPlayer">
             <div class="mp3Description mp3-img" style="background-image: url('/assets/images/beyond-the-horizon-image.webp');">
-                <h2 id="trackName">Beyond the Horizon</h2>
-                <h2 id="trackAuthor">Borrtex</h2>
+                <h2 id="trackTitle">Beyond the Horizon</h2>
+                <h2 id="trackArtist">Borrtex</h2>
             </div>
-            <div class="audioPlayerControls">   
+            <div class="audioPlayerControls">
                 <button class="skip-btn goBackwards-btn"><i class="fas fa-backward fa-lg"></i></button>
                 <button class="play-btn"><i class="fas fa-play fa-4x"></i></button>
                 <button class="skip-btn goForward-btn"><i class="fas fa-forward fa-lg"></i></button>
@@ -35,6 +36,6 @@
         </div>
     </div>
 
-    <script src="/assets/js/script.js"></script> 
+    <script src="/music-player-app/src/App.js" type="module"></script> 
 </body>
 </html>

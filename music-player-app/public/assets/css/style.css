@@ -122,14 +122,14 @@ h1 {
     margin-bottom: 30px;
 }
 
-#trackName {
+#trackTitle {
     font-size: calc( 16px + (8 - 4) * (100vw - 400px) / (800 - 400));
     font-weight: 600;
     color: rgba(255, 255, 255, 1);
     margin-bottom: 5px;
 }
 
-#trackAuthor {
+#trackArtist {
     font-size: calc( 16px + (8 - 4) * (100vw - 400px) / (800 - 400));
     font-weight: 300;
     color: rgba(255, 255, 255, 0.5);
