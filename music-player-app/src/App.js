@@ -1,7 +1,8 @@
-import React from 'react';
+import React,{Component} from 'react';
 import { useState, useEffect } from 'react';
 import MusicPlayer from './components/MusicPlayer';
 import Heading from './components/Heading';
+import Popup from './components/Popup';
 
 function App() {
   const [songs] = useState([
@@ -44,8 +45,44 @@ function App() {
     });
   }, [currentIndex])
 
+
+/* POPUP */ 
+// check input of popup
+  const checkInput =()=>{
+    let inputs = document.querySelectorAll(".inputs-container input");
+    let popup = document.querySelector(".popup");
+
+    let check = false;
+    for(let i=0;i<inputs.length;i++)
+    {
+        if(inputs[i].value === "1"){
+            check = true;
+        }
+        else{
+            check= false;
+        }
+    }
+
+    if(check === true) //if correct pincode
+    {
+        popup.classList.add("fade-out");
+        setTimeout(()=>{
+            popup.style.display="none";
+        },500);
+        popup.setAttribute("verified",'');
+
+    }
+
+    else{ //otherwise, display error message
+      let errorEl = document.querySelector(".error"); 
+      errorEl.style.display="block";
+    }
+
+}
+
   return (
     <>
+      <Popup checkInput={checkInput}/>
       <Heading />
       <div className="player-container">
         <MusicPlayer currentIndex={currentIndex}

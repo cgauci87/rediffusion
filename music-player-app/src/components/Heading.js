@@ -1,5 +1,3 @@
-import React, { Component }  from 'react';
-
 function Heading()
 {
     return(
@@ -8,6 +6,7 @@ function Heading()
             </video>
             <img id="logo" src="./assets/images/logo.png" alt="logo" />
             <h1 >Set<br />the<br />tone . </h1>
+            <div className='icon-scroll'></div>
         </div>
     )
 }

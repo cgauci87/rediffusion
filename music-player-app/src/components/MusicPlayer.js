@@ -35,7 +35,7 @@ function MusicPlayer(props) {
   return (
     <div className='audioPlayer'>
         <audio ref={audioControl} src={props.songs[props.currentIndex].src}></audio>
-        <h4>Playing Muzika...</h4>
+        <h4>Playing Music...</h4>
         <MusicPlayerInfo currentSong={props.songs[props.currentIndex]} />
         <MusicPlayerControls 
         // playing={playing} 
@@ -43,7 +43,7 @@ function MusicPlayer(props) {
              MoveBackward={MoveBackward}
             MoveForward={MoveForward} />
         <p>
-            <strong>Next Muzika:</strong> {props.songs[props.nextIndex].title} by {props.songs[props.nextIndex].artist}
+            <strong>Next Song:</strong> {props.songs[props.nextIndex].title} by {props.songs[props.nextIndex].artist}
             </p>
     </div>
   )

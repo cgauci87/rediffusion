@@ -11,6 +11,11 @@
 * playback and control functions called on respective events*/
 
 
+
+
+
+
+
 //entry into the program  
 
 window.onload = () => {  
@@ -74,8 +79,31 @@ window.onload = () => {
   },200);
 
   
+  
+  
+  /* POPUP */ 
+  //enable popup on scroll
+  window.addEventListener('scroll',function() {      
+    let scroll = this.scrollY;
+    let popup = this.document.querySelector(".popup");
+    if(popup.hasAttribute("verified")) //if user has once used correct pincode
+    {
+      return false;
+    }
+    else{ //if user has not yet used correct pincode
 
+      let playerContainer = document.querySelector(".player-container");
+      if (scroll > playerContainer.offsetTop) { //enalbing popup when user scrolls to last section
+        popup.classList.add("fade-in"); //adding fade-in effect to the popup
+        setTimeout(()=>{
+          popup.style.display = "flex"; //enabling popup after the fade-in animation is completed
+        },500)
+      }
 
+    }
+    });
+    
+    
 
 
 }
