@@ -52,15 +52,16 @@ function App() {
     let inputs = document.querySelectorAll(".inputs-container input");
     let popup = document.querySelector(".popup");
 
+
     let check = false;
     for(let i=0;i<inputs.length;i++)
     {
         if(inputs[i].value === "1"){
             check = true;
         }
-        else{
-            check= false;
-        }
+      else{
+      check= false;
+   }
     }
 
     if(check === true) //if correct pincode
@@ -72,6 +73,7 @@ function App() {
         popup.setAttribute("verified",'');
 
     }
+    
 
     else{ //otherwise, display error message
       let errorEl = document.querySelector(".error"); 

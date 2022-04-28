@@ -102,7 +102,15 @@ window.onload = () => {
 
     }
     });
+
+    navigator.mediaSession.metadata = new MediaMetadata({
+      title: 'This is a title!!',
+      artist: 'Artist Name',
+      album: 'Some Album',
+      //artwork: [{src: 'cover.jpg'}]
+    });
     
+    console.log(navigator.mediaSession);    
     
 
 
