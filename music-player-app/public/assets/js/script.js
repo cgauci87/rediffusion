@@ -92,8 +92,8 @@ window.onload = () => {
     }
     else{ //if user has not yet used correct pincode
 
-      let playerContainer = document.querySelector(".player-container");
-      if (scroll > playerContainer.offsetTop) { //enalbing popup when user scrolls to last section
+      let popupTrigger = document.querySelector(".heading-container > h1");
+      if (scroll > popupTrigger.offsetTop) { //enalbing popup when user scrolls to last section
         popup.classList.add("fade-in"); //adding fade-in effect to the popup
         setTimeout(()=>{
           popup.style.display = "flex"; //enabling popup after the fade-in animation is completed
@@ -102,6 +102,7 @@ window.onload = () => {
 
     }
     });
+    console.log(navigator.mediaSession);    
 
     navigator.mediaSession.metadata = new MediaMetadata({
       title: 'This is a title!!',

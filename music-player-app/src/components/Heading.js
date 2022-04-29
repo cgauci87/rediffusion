@@ -6,7 +6,7 @@ function Heading()
             </video>
             <img id="logo" src="./assets/images/logo.png" alt="logo" />
             <h1 >Set<br />the<br />tone . </h1>
-            <div className='icon-scroll'></div>
+            <div className='scroll-indicator'></div>
         </div>
     )
 }
