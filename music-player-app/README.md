@@ -1,108 +1,224 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Vin.yl music player
+Interactive Frontend Development for Project Portfolio 2 at Code Institute
 
-Welcome cgauci87,
+This project is an audio player, built as a React application. 
+It allows the user to stream music, which provides an uninterrupted listening experience, without saving the mp3s on the user's device.
+The player has audio controls like play, pause and volume and even rewind, forward buttons.
+The application consists of 2 page - heading and music player.
+Once the user scroll down for the music player; a popup will trigger to prompt user to enter a 4-digit pin code.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## UX
+The application is designed for music lovers.
+It is designed to be user friendly, simple and clean while it is visually appealing on all devices.
+It is made for anyone who loves music and wants a quick and easy way to play the music online. 
+They want a hasslefree experience using this music player. 
+The 2-page application is a simple and straightforward single-page-application with two sections - heading and the music player application itself.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+### User Stories
 
-## Gitpod Reminders
+#### Story 1
+As an application creator, I want to:
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+Build an app that is visually appealing to encourage the user to use the app frequently.
 
-`python3 -m http.server`
+#### Story 2
+As a user, I want to:
 
-A blue button should appear to click: _Make Public_,
+Be able to easily navigate throughout the application and use simplified controls.
 
-Another blue button should appear to click: _Open Browser_.
+### Strategy
+The goal with the application is to provide quick and easy access to the functions, and controls it provides.
+The design should fit the purpose.
+The foundation of the application should be solid with room for improvement for future updates/releases.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Scope
+The users should be able to use a fully functioning application for streaming music.
 
-A blue button should appear to click: _Make Public_,
+### Structure
+The application has a simple structure with the into giving a message as a heading once the user land to the site.
+The next section upon scrolling, is the music player application.
 
-Another blue button should appear to click: _Open Browser_.
+### Wireframes
+You can find the wireframes here:
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+[link](https://github.com/cgauci87/rediffusion/) 
 
-To log into the Heroku toolbelt CLI:
+## Features
+The application contains features with the remaining to be implemented in the future.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### Existing Features
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+#### Interactive background
+A function that uses Reacts useState to change the state of the element onClick. The design is made to provide the user with an immersive experience.
+Find out more about Reacts useState [here](https://reactjs.org/docs/hooks-state.html "Using the State Hook").
 
-------
+#### Music player 
+The playback and music visualization effects were built using hooks. 
+Find out more about hooks [here](https://reactjs.org/docs/hooks-reference.html "Hooks API Reference").
 
-## Release History
+##### CSS Animations
+Creation of scroll-indicator and hover effects.
+Find out more about animations [here](https://www.w3schools.com/css/css3_animations.asp).
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### Features Left to Implement
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+#### More options to the music player
+Add an option for the user to upload their own music track or an entire playlist.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+#### Recourses
+Provide more resources, in this case music. Add new playlists, and albums.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+#### Smooth Interactive design
+Add transitional times for background to make the experience slicker.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## Technologies Used
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### HTML
+This project uses semantic [HTML](https://html.com/ "HTML") to improve SEO and user friendliness. 
+The HTML is rendered from jsx-files in this React app. 
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### CSS
+The project uses responsive design to improve the user experience and availability on all devices. 
+The [CSS](https://www.w3.org/Style/CSS/Overview.en.html "CSS") is separated using comments. 
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### JS
+I used [JavaScript](https://www.javascript.com/ "JavaScript") for all the functions and interactivity on the application. 
+Comments are provided to give an explanation of the functions. 
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### React
+I used [React](https://reactjs.org/ "React") as a framework for all the functions and states. 
+React is a JavaScript library that builds user interfaces for single-page applications by dividing UI into composable components.
+Businesses that use ReactJS are assured of better performance compared to those that use other frameworks. 
+Because ReactJS helps to prevent updating of DOM, it means that the apps will be faster and deliver better UX. 
+ReactJS was designed to help improve the total rendered pages from the website server.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## Testing
+I have tested the application and sought for flaws in the design and errors in the functionality on several browsers on desktop, laptop and Samsung Galaxy S9 Plus.
+The expected outcome is that the application is responsive and functional on all browsers/devices. 
+Functions like audio controls should work properly.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Functionality
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+| Description   | Expected outcome | Pass | Comments |
+| ------------- |:----------------:| ----:| --------:|
+| Input 30 letters in Campaign name | Max input of 25 letters | Yes | - |
+| Input letters in the KPI fields | Shouldn't work, only numbers allowed | Yes | - |
+| Add a business without a name | Shouldn't work, "fill this field" should pop up | Yes | - |
+| Send an empty contact form | Shouldn't work, fields are required | Yes | - |
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Different Browsers and devices
 
-------
+#### Desktop
 
-## FAQ about the uptime script
+| Description   | Expected outcome | Pass | Comments |
+| ------------- |:----------------:| ----:| --------:|
+| Internet Explorer | The application works appropriately | No |  |
+| Google Chrome | The application works appropriately | Yes | - |
+| Mozilla Firefox | The application works appropriately | Yes | - |
+| Safari | The application works appropriately | Yes | - |
 
-**Why have you added this script?**
+#### Mobile
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+| Description   | Expected outcome | Pass | Comments |
+| ------------- |:----------------:| ----:| --------:|
+| Google Chrome | The application works appropriately | Yes | - |
+| Safari | The application works appropriately | Yes | - |
 
-**How will this affect me?**
+### Responsiveness
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+I have tested the responsiveness of the application [here](http://ami.responsivedesign.is/# "Am I Responsive?") and it is responsive.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+![alt text](src/assets/images/responsive-app.png "I am responsive!")
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### Code validation
 
-**So….?**
+#### CSS
+I validated my CSS with the [Jigsaw W3C Validation Service](https://jigsaw.w3.org/css-validator/ "CSS Validation"). 
+I got 8 errors regarding that the property `padding-inline-start`, `margin-block-end` and `margin-block-start` doesn't exist.
+I found this [information](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline-start "Padding inline start on Mozilla") regarding the issue. 
+The CSS does make a positive difference in the design of the application as I have tested this. 
+Therefore I choose to keep it even though jigsaw regards the CSS as an error.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+#### HTML
+I validated my HTML with the [W3C Markup Validation Service](https://validator.w3.org/ "HTML Validator") with no errors or warnings to show.
 
-**Can I opt out?**
+#### JS
+I ran my JavaScript through jshint, [JSLint](https://jshint.com/ "JSHint"), with no major issues. 
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### Conclusion
+Post deployment testing has beeen conducted, application is functioning as intended. 
+Future implementation of new features are in the pipepline which should maximise the applications's potential.
+The minor flaws which may occur, does not ruin the user experience but should be corrected in the future.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+## Deployment
+I followed this [guide](https://github.com/gitname/react-gh-pages "Deploy React to GitHub Pages") to create and deploy the react app to GitHub Pages.
+Initially I created the app using VS Code locally on my computer and later continued the development on GitPod, commits were done to git and pushed to the master branch on GitHub. 
 
-**Anything more?**
+To deploy this page to GitHub Pages from its [GitHub repository](https://github.com/cgauci87/rediffusion "GitHub repository"), the following steps were taken:
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+1. Log into GitHub
 
----
+2. From the list of repositories on the screen, select **cgauci87/rediffusion**
 
-Happy coding!
+3. Go to **Settings**
+
+4. Scroll down to the **GitHub Pages** section.
+
+5. Under **Source** click the drop-down menu labelled None and select **Branch: gh-pages**
+
+6. On selecting **Branch: gh-pages** the page is automatically refreshed, the application is now deployed.
+
+7. Scroll back down to the **GitHub Pages** section to retrieve the link to the deployed application.
+
+Now you can package and push the project to **Branch: gh-pages** to update the deployed version of the application with the command `$ npm run deploy`.
+At the moment of submitting this Milestone project the Development Branch and Master Branch are identical.
+
+### How to run this project locally
+
+1. Use this [link](https://github.com/cgauci87/rediffusion/ "rediffusion") to get to the projects repository.
+
+2. Click "Clone or Download".
+
+3. Click the "copy" icon.
+
+4. Open Git Bash in your local IDE.
+
+5. Change your current working directory to where you want the cloned directory to be made.
+
+6. Type `$ git clone` and then paste the URL you copied earlier.
+
+   `git clone https://github.com/USERNAME/REPOSITORY`
+
+7. When you press enter your local clone will be ready.
+
+## Credits
+
+### Content
+All content on the application was written by myself. 
+
+### Media
+The logo and background used for this project was provided by [Pexels](https://www.pexels.com/ "Pexels").
+All music was provided by [Synchedin](https://synchedin.com/ "Synchedin").
+
+### Acknowledgements
+I believe [React](https://reactjs.org/ "React") has proved to be a robust framework for creating this application and for long-term effiency.
+It works better and is simplified to work with than I could have thought.
+I'm looking forward to keep improving my knowledge of JavaScript and React, to improve this application as well as applying it to future projects.
+
+## Resources
+Below is a list of the resources used to create this project:
+
+- [Deploying a React App to GitHub Pages](https://github.com/gitname/react-gh-pages "Create React App and deploy to GitHub Pages")
+- [React](https://reactjs.org/ "React")
+- [React Tutorial](https://reactjs.org/tutorial/tutorial.html#before-we-start-the-tutorial "React Tutorial")
+- [React Fundamentals](https://reactnative.dev/docs/intro-react "React Fundamentals")
+- [React Custom Hooks](https://reactjs.org/docs/hooks-custom.html "React Custom Hooks")
+- [Using the State Hook](https://reactjs.org/docs/hooks-state.html "Using the State Hook")
+- [Hooks API Reference](https://reactjs.org/docs/hooks-reference.html "Hooks API Reference")
+- [React Media Queries](https://github.com/ReactTraining/react-media "React Media Queries")
+
+## Special Thanks
+Special thanks to my mentor Brian O'Hare and my fellow students at Code Institute for their assistance throughout this project.
+
