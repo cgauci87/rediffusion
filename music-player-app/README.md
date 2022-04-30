@@ -167,7 +167,7 @@ To deploy this page to GitHub Pages from its [GitHub repository](https://github.
 
 5. Under **Source** click the drop-down menu labelled None and select **Branch: main**
 
-6. On selecting **Branch: main** the page is automatically refreshed, the application is now deployed.
+6. On selecting **Branch: main** the page is automatically refreshed, click save, the application is now deployed.
 
 7. Scroll back down to the **GitHub Pages** section to retrieve the link to the deployed application.
 
