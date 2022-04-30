@@ -2,24 +2,29 @@
 Interactive Frontend Development for Project Portfolio 2 at Code Institute
 
 This project is an audio player, built as a React application. 
-It allows the user to stream music, which provides an uninterrupted listening experience, without saving the mp3s on the user's device.
-The player has audio controls like play, pause and volume and even rewind, forward buttons.
-The application consists of 2 page - heading and music player.
-Once the user scroll down for the music player; a popup will trigger to prompt user to enter a 4-digit pin code.
+It allows the user to stream music, which provides an uninterrupted listening experience, without saving the audio on the user's device.
+The player has audio controls like play, pause, volume and even rewind, forward buttons.
+The application consists of 2 sections - heading and music player.  
+Once the user scrolls down for the music player; a popup will trigger to prompt user to enter a 4-digit pin code.
+
+[Live Project Here](https://cgauci87.github.io/ci-portfolio-two-vin.yl/)
+
+
+![alt text](public/assets/images/responsiveness.PNG "vin-yl responsiveness") 
 
 ## UX
 The application is designed for music lovers.
-It is designed to be user friendly, simple and clean while it is visually appealing on all devices.
+It is designed to be user friendly, simple and clean while making sure it is responsive and visually appealing on all devices.
 It is made for anyone who loves music and wants a quick and easy way to play the music online. 
-They want a hasslefree experience using this music player. 
-The 2-page application is a simple and straightforward single-page-application with two sections - heading and the music player application itself.
+Users will get a hasslefree experience using this music player. 
+The project is a simple and straightforward single-page-application with two sections - heading and the music player application itself.
 
 ### User Stories
 
 #### Story 1
-As an application creator, I want to:
+As a Developer, I want to:
 
-Build an app that is visually appealing to encourage the user to use the app frequently.
+Build an app that is visually appealing to encourage the user to use it frequently.
 
 #### Story 2
 As a user, I want to:
@@ -35,25 +40,23 @@ The foundation of the application should be solid with room for improvement for 
 The users should be able to use a fully functioning application for streaming music.
 
 ### Structure
-The application has a simple structure with the into giving a message as a heading once the user land to the site.
+The application has a simple structure with the intro giving a message as a heading once the user lands to the site.
 The next section upon scrolling, is the music player application.
 
-### Wireframes
-You can find the wireframes here:
-
-[link](https://github.com/cgauci87/rediffusion/) 
-
 ## Features
-The application contains features with the remaining to be implemented in the future.
+The application contains following features with the remaining to be implemented in the future.
 
 ### Existing Features
 
 #### Interactive background
-A function that uses Reacts useState to change the state of the element onClick. The design is made to provide the user with an immersive experience.
-Find out more about Reacts useState [here](https://reactjs.org/docs/hooks-state.html "Using the State Hook").
+A function that checks current state of the player and uses it to change the state of background. The design is made to provide the user with an immersive experience.
+
+#### Playback & Visualization
+The Web Audio API provided methods to control the playback as well as visualize the music.
+Find out more about Web Audio API [here](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API).
 
 #### Music player 
-The playback and music visualization effects were built using hooks. 
+The next/previous functionality was built using UseState and UseEffect hooks. 
 Find out more about hooks [here](https://reactjs.org/docs/hooks-reference.html "Hooks API Reference").
 
 ##### CSS Animations
@@ -76,7 +79,7 @@ Add transitional times for background to make the experience slicker.
 
 ### HTML
 This project uses semantic [HTML](https://html.com/ "HTML") to improve SEO and user friendliness. 
-The HTML is rendered from jsx-files in this React app. 
+The HTML is written in jsx-syntax in this React app. 
 
 ### CSS
 The project uses responsive design to improve the user experience and availability on all devices. 
@@ -203,7 +206,7 @@ The logo and background used for this project was provided by [Pexels](https://w
 All music was provided by [Synchedin](https://synchedin.com/ "Synchedin").
 
 ### Acknowledgements
-I believe [React](https://reactjs.org/ "React") has proved to be a robust framework for creating this application and for long-term effiency.
+I believe [React](https://reactjs.org/ "React") has proved to be a robust framework for creating this application and for long-term efficiency.
 It works better and is simplified to work with than I could have thought.
 I'm looking forward to keep improving my knowledge of JavaScript and React, to improve this application as well as applying it to future projects.
 
