@@ -101,16 +101,6 @@ I have tested the application and sought for flaws in the design and errors in t
 The expected outcome is that the application is responsive and functional on all browsers/devices. 
 Functions like audio controls should work properly.
 
-### Functionality
-
-| Description   | Expected outcome | Pass | Comments |
-| ------------- |:----------------:| ----:| --------:|
-| Input 30 letters in Campaign name | Max input of 25 letters | Yes | - |
-| Input letters in the KPI fields | Shouldn't work, only numbers allowed | Yes | - |
-| Add a business without a name | Shouldn't work, "fill this field" should pop up | Yes | - |
-| Send an empty contact form | Shouldn't work, fields are required | Yes | - |
-
-
 ### Different Browsers and devices
 
 #### Desktop
