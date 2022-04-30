@@ -7,7 +7,7 @@ The player has audio controls like play, pause, volume and even rewind, forward 
 The application consists of 2 sections - heading and music player.  
 Once the user scrolls down for the music player; a popup will trigger to prompt user to enter a 4-digit pin code.
 
-[Live Project Here](https://cgauci87.github.io/ci-portfolio-two-vin.yl/)
+[Live Project Here](https://cgauci87.github.io/rediffusion/)
 
 
 ![alt text](public/assets/images/responsiveness.PNG "vin-yl responsiveness") 
