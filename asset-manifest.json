@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/rediffusion/static/css/main.b0b0e596.css",
+    "main.js": "/rediffusion/static/js/main.7104354e.js",
+    "index.html": "/rediffusion/index.html",
+    "main.b0b0e596.css.map": "/rediffusion/static/css/main.b0b0e596.css.map",
+    "main.7104354e.js.map": "/rediffusion/static/js/main.7104354e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b0b0e596.css",
+    "static/js/main.7104354e.js"
+  ]
+}
