@@ -165,13 +165,13 @@ To deploy this page to GitHub Pages from its [GitHub repository](https://github.
 
 4. Scroll down to the **GitHub Pages** section.
 
-5. Under **Source** click the drop-down menu labelled None and select **Branch: gh-pages**
+5. Under **Source** click the drop-down menu labelled None and select **Branch: main**
 
-6. On selecting **Branch: gh-pages** the page is automatically refreshed, the application is now deployed.
+6. On selecting **Branch: main** the page is automatically refreshed, the application is now deployed.
 
 7. Scroll back down to the **GitHub Pages** section to retrieve the link to the deployed application.
 
-Now you can package and push the project to **Branch: gh-pages** to update the deployed version of the application with the command `$ npm run deploy`.
+Now you can package and push the project to **Branch: main** to update the deployed version of the application with the command `$ npm run deploy`.
 At the moment of submitting this Milestone project the Development Branch and Master Branch are identical.
 
 ### How to run this project locally
