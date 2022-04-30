@@ -10,7 +10,7 @@ Once the user scrolls down for the music player; a popup will trigger to prompt 
 [Live Project Here](https://cgauci87.github.io/rediffusion/)
 
 
-![alt text](public/assets/images/responsiveness.PNG "vin-yl responsiveness") 
+![alt text](/music-player-app/public/assets/images/responsiveness.PNG "vin-yl responsiveness") 
 
 ## UX
 The application is designed for music lovers.
