@@ -133,7 +133,6 @@ Functions like audio controls should work properly.
 
 I have tested the responsiveness of the application [here](http://ami.responsivedesign.is/# "Am I Responsive?") and it is responsive.
 
-![alt text](src/assets/images/responsive-app.png "I am responsive!")
 
 ### Code validation
 
