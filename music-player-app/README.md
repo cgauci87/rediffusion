@@ -138,16 +138,13 @@ I have tested the responsiveness of the application [here](http://ami.responsive
 
 #### CSS
 I validated my CSS with the [Jigsaw W3C Validation Service](https://jigsaw.w3.org/css-validator/ "CSS Validation"). 
-I got 8 errors regarding that the property `padding-inline-start`, `margin-block-end` and `margin-block-start` doesn't exist.
-I found this [information](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline-start "Padding inline start on Mozilla") regarding the issue. 
-The CSS does make a positive difference in the design of the application as I have tested this. 
-Therefore I choose to keep it even though jigsaw regards the CSS as an error.
+No major errors.
 
 #### HTML
 I validated my HTML with the [W3C Markup Validation Service](https://validator.w3.org/ "HTML Validator") with no errors or warnings to show.
 
 #### JS
-I ran my JavaScript through jshint, [JSLint](https://jshint.com/ "JSHint"), with no major issues. 
+I ran my JavaScript through jshint, [JSHint](https://jshint.com/ "JSHint"), with no major issues. 
 
 ### Conclusion
 Post deployment testing has beeen conducted, application is functioning as intended. 
